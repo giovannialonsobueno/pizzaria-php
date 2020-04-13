@@ -109,6 +109,5 @@
 			<span>R$ 38,50</span>
 		</article>
 	</main>
-	
 </body>
 </html>
