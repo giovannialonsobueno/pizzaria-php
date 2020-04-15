@@ -43,7 +43,19 @@
      * de destaque. Dica: $vetor[] = 3 adiciona o número 3
      * na última posição de $vetor
      */
-    function pizzasSemDestaque(){}
+    function pizzasSemDestaque(){
+        global $pizzas;
+        $vetor = [];
+
+    foreach($pizzas as $pizza) {
+        if($pizza ['destaque'] == false) {
+            $vetor[] = $pizza;     
+        }
+    }
+    echo "<pre>";
+    print_r($vetor);
+    echo "</pre>";
+    }
 
     /**
      * Defina uma função que retorne a pizza mais cara do menu
@@ -64,7 +76,17 @@
      * e retorna um array contendo todas as pizzas que contenham
      * o trecho
      */
-     function buscaPizza($trecho){}
+     function buscaPizza($trecho){
+         global $pizzas;
+         $nomeP = [];
+
+         foreach($pizzas as $pizza) {
+             if(stripos($pizza['nome'], $trecho) !== false) {
+                 $nomeP[] = $pizza;
+             }
+         }
+         return $nomeP;
+     }
 
      /**
      * Defina uma função que impima as informações de uma pizza

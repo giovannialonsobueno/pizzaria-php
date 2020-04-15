@@ -10,12 +10,21 @@
      include("includes/functions.php");
      include("includes/pizzas.php");
 
-    $pizza = pizzaPorId(7);
+    //$pizza = pizzaPorId(7);
 
+    //  echo "<pre>";
+    //  print_r($pizza);
+    //  echo "</pre>";
+
+    // Exercicio 2. Pizza com Destaque
+     //pizzasComDestaque();
+
+    // Exercicio 3. Pizza sem Destaque
+     //pizzasSemDestaque();
+
+    
+     
      echo "<pre>";
-     print_r($pizza);
+     print_r(buscaPizza("ca"));
      echo "</pre>";
-
-
-     pizzasComDestaque();
 ?>
