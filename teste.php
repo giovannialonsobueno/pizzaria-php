@@ -6,4 +6,16 @@
      * functions.php
      */
     
+
+     include("includes/functions.php");
+     include("includes/pizzas.php");
+
+    $pizza = pizzaPorId(7);
+
+     echo "<pre>";
+     print_r($pizza);
+     echo "</pre>";
+
+
+     pizzasComDestaque();
 ?>

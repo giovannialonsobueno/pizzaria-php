@@ -22,7 +22,21 @@
      * de destaque. Dica: $vetor[] = 3 adiciona o número 3
      * na última posição de $vetor
      */
-    function pizzasComDestaque(){}
+    function pizzasComDestaque(){
+        global $pizzas;
+        $vetor = [];
+
+    foreach($pizzas as $pizza) {
+        if($pizza ['destaque'] != false) {
+            $vetor[] = $pizza;     
+        }
+    }
+    echo "<pre>";
+    print_r($vetor);
+    echo "</pre>";
+    //print_r($vetor);
+
+    }
 
      /**
      * Defina uma função que retorne um array com as pizzas
